@@ -1,0 +1,44 @@
+<!-- Início do Gadget de Banner Responsivo com <picture> -->
+<div class="banner-wrapper">
+  <a href="https://bit.ly/3KYM2i9" target="_blank">
+    <picture>
+      <!-- desktop: ativa em ≥728px -->
+      <source
+        media="(min-width: 728px)"
+        srcset="https://raw.githubusercontent.com/amodireito/banners-parceiros/refs/heads/main/banner-canarinho-1250-100.webp"
+      />
+      <!-- mobile: ativa em <728px -->
+      <source
+        media="(max-width: 727px)"
+        srcset="https://raw.githubusercontent.com/amodireito/banners-parceiros/refs/heads/main/banner-canarinho-1024-210.webp"
+      />
+      <!-- fallback -->
+      <img
+        src="https://raw.githubusercontent.com/amodireito/banners-parceiros/refs/heads/main/banner-canarinho-1250-100.webp"
+        alt="Banner Parceiro Peticione.ai"
+        class="responsive-banner"
+      />
+    </img
+></source
+></source
+></picture>
+  </a>
+</div>
+
+<style>
+  .banner-wrapper {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .responsive-banner {
+    width: 100%;
+    height: auto;
+    transition: filter 0.3s ease;
+    display: inline-block;
+  }
+  /* hover: clareia em 20% */
+  .banner-wrapper a:hover .responsive-banner {
+    filter: brightness(1.2);
+  }
+</style>
+<!-- Fim do Gadget de Banner Responsivo com <picture> -->
